@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ @media screen and (max-width: 480px) {
+  .messenger{
+      display: flex;
+      margin-left: 140px ;
+      
+   }
+  } */
+
+
+
+.eyy {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: -300px; /* Start off-screen */
+    width: 300px;
+    height: 100vh;
+    background-color: #2d1b1b; /* Add your desired background color */
+    transition: right 0.3s ease; /* Add a transition for smooth animation */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .eyy.open {
+    right: 0; /* Slide in to the screen */
+  }

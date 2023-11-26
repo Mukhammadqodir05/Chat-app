@@ -2,31 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.sign_in{
+  background-image: linear-gradient(to right top, #e8188f, 
+  #e22f9f, #db3fae, #d24dbc, #c85ac9, #b158bf, #9a55b4,
+   #8551a8,#623f85, #422d62, #261c41, #200e40);
+}
+
+
+.sec_div{
+   background-color:#653082;
+}
+
+
+      /* making mobile responsibe */
 /* 
- @media screen and (max-width: 480px) {
-  .messenger{
-      display: flex;
-      margin-left: 140px ;
-      
+@media screen and (max-width: 780px){
+  .con{
+    width: 750px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .con{
+    width: 500px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px){
+   .con{
+     width: 600px;
+     height: 600px;
    }
-  } */
+}
 
-
-
-.eyy {
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    right: -300px; /* Start off-screen */
-    width: 300px;
-    height: 100vh;
-    background-color: #2d1b1b; /* Add your desired background color */
-    transition: right 0.3s ease; /* Add a transition for smooth animation */
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.6);
+@media screen and (max-width: 500px){
+  .con{
+    width: 470px;
+    height: 600px;
   }
+}
+
+
+@media screen and (max-width: 450px){
+  .con{
+    width: 380px;
+    height: 600px;
+  }
+} */
+
+input::placeholder {
+  color: rgb(13, 7, 7); /* Set the desired color for the placeholder text */
+}
+
+.input{
+  padding-left: 40px;
+  color: white;
   
-  .eyy.open {
-    right: 0; /* Slide in to the screen */
-  }
+}
+
+.input::placeholder {
+  color: rgb(188, 175, 175);
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5f2d7a;
+  border-radius: 2px; 
+}
